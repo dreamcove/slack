@@ -27,6 +27,9 @@ type AppMentionEvent struct {
 	// When Message comes from a channel that is shared between workspaces
 	UserTeam   string `json:"user_team,omitempty"`
 	SourceTeam string `json:"source_team,omitempty"`
+
+	// Bot ID is given when a bot is performing the app_mention
+	BotID    string `json:"bot_id,omitempty"`
 }
 
 // AppHomeOpenedEvent Your Slack app home was opened.
